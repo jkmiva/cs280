@@ -1,0 +1,60 @@
+/**
+ * Name : Huang Jiaming
+ * NSID : jih211
+ * StuID: 11207964 
+ */
+
+Input 2D points:
+(5.0, 2.0)
+(9.0, 10.0)
+(11.0, 1.0)
+(4.0, 3.0)
+(2.0, 12.0)
+(3.0, 7.0)
+(1.0, 5.0)
+
+The 2D tree built from these points is:
+/* r: rootNode, L: leftSubTree, R: rightSubTree, leftmost number: level of nodes */
+1r: (4.0, 3.0)
+    2L: (3.0, 7.0)
+        3L: (1.0, 5.0)
+        3R: (2.0, 12.0)
+    2R: (5.0, 2.0)
+        3L: (11.0, 1.0)
+        3R: (9.0, 10.0)
+
+Input 3D points:
+(1.0, 12.0, 1.0)
+(18.0, 1.0, 2.0)
+(2.0, 12.0, 16.0)
+(7.0, 3.0, 3.0)
+(3.0, 7.0, 5.0)
+(16.0, 4.0, 4.0)
+(4.0, 6.0, 1.0)
+(5.0, 5.0, 17.0)
+
+The 3D tree built from these points is:
+/* r: rootNode, L: leftSubTree, R: rightSubTree, leftmost number: level of nodes */
+1r: (4.0, 6.0, 1.0)
+    2L: (2.0, 12.0, 16.0)
+        3L: (3.0, 7.0, 5.0)
+        3R: (1.0, 12.0, 1.0)
+    2R: (7.0, 3.0, 3.0)
+        3L: (18.0, 1.0, 2.0)
+        3R: (16.0, 4.0, 4.0)
+            4R: (5.0, 5.0, 17.0)
+
+Looking for points between (0.0, 1.0, 0.0) and (4.0, 6.0, 3.0). Found:
+(4.0, 6.0, 1.0)
+
+Looking for points between (0.0, 1.0, 0.0) and (8.0, 7.0, 4.0). Found:
+(7.0, 3.0, 3.0)
+(4.0, 6.0, 1.0)
+
+Looking for points between (0.0, 1.0, 0.0) and (17.0, 9.0, 10.0). Found:
+(3.0, 7.0, 5.0)
+(16.0, 4.0, 4.0)
+(7.0, 3.0, 3.0)
+(4.0, 6.0, 1.0)
+
+
