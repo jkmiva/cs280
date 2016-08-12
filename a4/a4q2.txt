@@ -1,0 +1,25 @@
+/**
+ * Name:  Huang Jiaming
+ * NSID:  jih211
+ * StuID: 11207964
+ */
+
+1.
+    Filename                Avg. Queries for hashQuestLog           Avg. Queries for treeQuestLog
+    quests4.csv                         1.25                                    2.0
+    quests16.csv                        1.125                                   4.0
+    quests250.csv                       1.232                                   13.34 
+    quests1000.csv                      2.148                                   18.08
+    quests100000.csv                    1.45367                                 30.8778
+    
+2.
+    O(1)
+    
+3.
+    O(logn)
+    
+4.
+    they are the same. both methods need to iterate through all the items, time complexity both are O(n)
+    
+5.
+    I prefer hashed quest log, to search a particular item, complexity of hash table is O(1), much faster than binary tree which is O(logn).
